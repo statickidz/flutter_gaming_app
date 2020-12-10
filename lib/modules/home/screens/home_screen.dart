@@ -3,7 +3,7 @@ import 'package:slayout_app/modules/home/widgets/home_banner.dart';
 import 'package:slayout_app/modules/home/widgets/home_carousel.dart';
 import 'package:slayout_app/modules/home/widgets/home_leaderboard.dart';
 import 'package:slayout_app/modules/home/widgets/home_tag.dart';
-import 'package:slayout_app/modules/home/widgets/home_widget_head.dart';
+import 'package:slayout_app/modules/layout/widgets/heading.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -36,11 +36,17 @@ class _HomeScreenState extends State<HomeScreen> {
             HomeTag('#freefire'),
           ]),
           SizedBox(height: 15),
-          HomeWidgetHead('Upcoming Tournaments'),
+          Heading(
+            title: 'Upcoming Tournaments',
+            onPressed: () {},
+          ),
           SizedBox(height: 5),
           HomeCarousel(),
           SizedBox(height: 15),
-          HomeWidgetHead('Hall of fame'),
+          Heading(
+            title: 'Hall of fame',
+            onPressed: () {},
+          ),
           SizedBox(height: 10),
           HomeLeaderboard(),
           SizedBox(height: 15),

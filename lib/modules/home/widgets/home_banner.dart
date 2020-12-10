@@ -12,7 +12,7 @@ class HomeBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 175,
+      height: 155,
       child: Stack(
         children: <Widget>[
           ClipRRect(

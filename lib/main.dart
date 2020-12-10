@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:slayout_app/modules/navigation/screens/navigation_screen.dart';
+import 'package:slayout_app/modules/layout/screens/navigation_screen.dart';
 import 'package:slayout_app/theme/style.dart';
 
 void main() {

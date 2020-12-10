@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:slayout_app/modules/events/screens/event_list_screen.dart';
 import 'package:slayout_app/modules/home/screens/home_screen.dart';
-import 'package:slayout_app/modules/navigation/widgets/top_bar.dart';
+import 'package:slayout_app/modules/layout/widgets/top_bar.dart';
 
 class NavigationScreen extends StatefulWidget {
   NavigationScreen({Key key}) : super(key: key);
 
   @override
-  _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
+  _NavigationState createState() => _NavigationState();
 }
 
-class _MyStatefulWidgetState extends State<NavigationScreen> {
+class _NavigationState extends State<NavigationScreen> {
   int _selectedIndex = 0;
 
   static Widget comingSoon = Container(
@@ -24,7 +25,7 @@ class _MyStatefulWidgetState extends State<NavigationScreen> {
 
   static List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    comingSoon,
+    EventListScreen(),
     comingSoon,
     comingSoon,
     comingSoon,
