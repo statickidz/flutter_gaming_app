@@ -10,11 +10,6 @@ class EventListScreen extends StatefulWidget {
 
 class _EventListState extends State<EventListScreen> {
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
