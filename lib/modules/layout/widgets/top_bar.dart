@@ -14,14 +14,14 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
       padding: EdgeInsets.symmetric(horizontal: 15),
       margin: EdgeInsets.symmetric(vertical: 5),
       child: AppBar(
-        leading: Image.asset('images/logo.png'),
-        leadingWidth: 70,
+        leading: Image.asset('assets/images/logo.png'),
+        leadingWidth: 30,
         actions: [
           Container(
             margin: EdgeInsets.only(right: 10),
             child: Chip(
                 label: Text(
-                  '\$1,250',
+                  '\$250',
                   style: TextStyle(color: Theme.of(context).accentColor),
                 ),
                 backgroundColor: Color(0xFF242A4F)),
@@ -30,8 +30,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
             width: 25,
             height: 25,
             child: CircleAvatar(
-              backgroundImage: NetworkImage(
-                  'https://yt3.ggpht.com/a-/AAuE7mAg0KrfFZhgSrL3d4QVM2sohJkqUFMoVesAtQ=s240-mo-c-c0xffffffff-rj-k-no'),
+              backgroundImage: AssetImage('assets/images/avatar.png'),
             ),
           ),
         ],

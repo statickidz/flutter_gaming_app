@@ -1,6 +1,12 @@
-# slayout_app
+# flutter_gaming_app
 
-A new Flutter project.
+A flutter Gaming App UI example.
+
+<img src="screenshot.jpg">
+
+## Demo
+
+- Flutter web version: [https://flutter-gaming-app.netlify.app](https://flutter-gaming-app.netlify.app)
 
 ## Getting Started
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:slayout_app/modules/home/widgets/home_carousel.dart';
-import 'package:slayout_app/modules/layout/widgets/heading.dart';
+import 'package:flutter_gaming_app/modules/home/widgets/home_carousel.dart';
+import 'package:flutter_gaming_app/modules/layout/widgets/heading.dart';
 
 class EventListScreen extends StatefulWidget {
   @override
@@ -16,7 +16,7 @@ class _EventListState extends State<EventListScreen> {
         children: [
           Container(
             child: Image.asset(
-              'images/card1-notext.png',
+              'assets/images/card1-notext.png',
             ),
             padding: EdgeInsets.only(left: 15, right: 15, bottom: 5),
           ),
@@ -38,7 +38,7 @@ class _EventListState extends State<EventListScreen> {
               Expanded(
                 child: Container(
                   child: Image.asset(
-                    'images/card1.png',
+                    'assets/images/card1.png',
                   ),
                   padding: EdgeInsets.only(left: 15, right: 7.5, bottom: 10),
                 ),
@@ -46,7 +46,7 @@ class _EventListState extends State<EventListScreen> {
               Expanded(
                 child: Container(
                   child: Image.asset(
-                    'images/card2.png',
+                    'assets/images/card2.png',
                   ),
                   padding: EdgeInsets.only(right: 15, left: 7.5, bottom: 10),
                 ),
@@ -58,7 +58,7 @@ class _EventListState extends State<EventListScreen> {
               Expanded(
                 child: Container(
                   child: Image.asset(
-                    'images/card2.png',
+                    'assets/images/card2.png',
                   ),
                   padding: EdgeInsets.only(left: 15, right: 7.5, bottom: 10),
                 ),
@@ -66,7 +66,7 @@ class _EventListState extends State<EventListScreen> {
               Expanded(
                 child: Container(
                   child: Image.asset(
-                    'images/card1.png',
+                    'assets/images/card1.png',
                   ),
                   padding: EdgeInsets.only(right: 15, left: 7.5, bottom: 10),
                 ),
@@ -78,7 +78,7 @@ class _EventListState extends State<EventListScreen> {
               Expanded(
                 child: Container(
                   child: Image.asset(
-                    'images/card1.png',
+                    'assets/images/card1.png',
                   ),
                   padding: EdgeInsets.only(left: 15, right: 7.5, bottom: 10),
                 ),
@@ -86,7 +86,7 @@ class _EventListState extends State<EventListScreen> {
               Expanded(
                 child: Container(
                   child: Image.asset(
-                    'images/card2.png',
+                    'assets/images/card2.png',
                   ),
                   padding: EdgeInsets.only(right: 15, left: 7.5, bottom: 10),
                 ),
@@ -109,7 +109,7 @@ class _EventListState extends State<EventListScreen> {
               return Container(
                 padding: EdgeInsets.only(left: 10, right: 10),
                 child: Image.asset(
-                  'images/card1.png',
+                  'assets/images/card1.png',
                 ),
               );
             }),

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:slayout_app/modules/home/widgets/home_banner.dart';
-import 'package:slayout_app/modules/home/widgets/home_carousel.dart';
-import 'package:slayout_app/modules/home/widgets/home_leaderboard.dart';
-import 'package:slayout_app/modules/home/widgets/home_tag.dart';
-import 'package:slayout_app/modules/layout/widgets/heading.dart';
+import 'package:flutter_gaming_app/modules/home/widgets/home_banner.dart';
+import 'package:flutter_gaming_app/modules/home/widgets/home_carousel.dart';
+import 'package:flutter_gaming_app/modules/home/widgets/home_leaderboard.dart';
+import 'package:flutter_gaming_app/modules/home/widgets/home_tag.dart';
+import 'package:flutter_gaming_app/modules/layout/widgets/heading.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -18,18 +18,22 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Container(
         child: Column(children: [
           HomeBanner(
-            title: 'Host your own tournaments!',
+            title: 'The world’s largest competitive gaming platform',
             subTitle:
-                'It’s never been easier! Just a few clicks and we take care of the rest.',
+                'Sign up for cups, get information about your matches and report your results!',
+            price: '\$12/mo',
+            height: 210,
           ),
           SizedBox(height: 25),
-          Row(children: [
-            HomeTag('#warzone'),
-            SizedBox(width: 5),
-            HomeTag('#apexlegends'),
-            SizedBox(width: 5),
-            HomeTag('#freefire'),
-          ]),
+          Row(
+            children: [
+              HomeTag('#warzone'),
+              SizedBox(width: 5),
+              HomeTag('#apexlegends'),
+              SizedBox(width: 5),
+              HomeTag('#freefire'),
+            ],
+          ),
           SizedBox(height: 15),
           Heading(
             title: 'Upcoming Tournaments',

@@ -3,22 +3,26 @@ import 'package:flutter/material.dart';
 class HomeBanner extends StatelessWidget {
   final String title;
   final String subTitle;
+  final String price;
+  final double height;
 
   HomeBanner({
     @required this.title,
     @required this.subTitle,
+    @required this.price,
+    @required this.height,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 155,
+      height: height,
       child: Stack(
         children: <Widget>[
           ClipRRect(
             borderRadius: BorderRadius.circular(8.0),
-            child: Image.asset(
-              'images/banner_bg.png',
+            child: Image(
+              image: AssetImage('assets/images/gaming2.jpg'),
               height: MediaQuery.of(context).size.height,
               width: MediaQuery.of(context).size.width,
               fit: BoxFit.cover,
@@ -26,33 +30,43 @@ class HomeBanner extends StatelessWidget {
           ),
           Container(
             padding: EdgeInsets.all(15),
-            child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(
-                title,
-                style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
-              ),
-              Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-                Expanded(
-                  flex: 2,
-                  child: Container(
-                      margin: EdgeInsets.only(top: 5),
-                      child: Text(subTitle, style: TextStyle(fontSize: 14))),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
                 ),
-                Expanded(
-                  flex: 1,
-                  child: Chip(
-                      label: Text(
-                        '\$69.99/mo',
-                        style: TextStyle(
-                            color: Theme.of(context).backgroundColor,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 16),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Container(
+                        margin: EdgeInsets.only(top: 5),
+                        child: Text(
+                          subTitle,
+                          style: TextStyle(fontSize: 14),
+                        ),
                       ),
-                      backgroundColor: Theme.of(context).accentColor),
+                    ),
+                    Expanded(
+                      flex: 1,
+                      child: Chip(
+                          label: Text(
+                            price,
+                            style: TextStyle(
+                              color: Theme.of(context).backgroundColor,
+                              fontWeight: FontWeight.w400,
+                              fontSize: 16,
+                            ),
+                          ),
+                          backgroundColor: Theme.of(context).accentColor),
+                    )
+                  ],
                 )
-              ])
-            ]),
+              ],
+            ),
           )
         ],
       ),

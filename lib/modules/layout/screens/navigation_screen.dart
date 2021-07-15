@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:slayout_app/modules/events/screens/event_list_screen.dart';
-import 'package:slayout_app/modules/home/screens/home_screen.dart';
-import 'package:slayout_app/modules/layout/widgets/top_bar.dart';
-import 'package:slayout_app/modules/webview/screens/webview_screen.dart';
+import 'package:flutter_gaming_app/modules/events/screens/event_list_screen.dart';
+import 'package:flutter_gaming_app/modules/home/screens/home_screen.dart';
+import 'package:flutter_gaming_app/modules/layout/widgets/top_bar.dart';
 
 class NavigationScreen extends StatefulWidget {
   NavigationScreen({Key key}) : super(key: key);
@@ -27,7 +26,7 @@ class _NavigationState extends State<NavigationScreen> {
   static List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     EventListScreen(),
-    WebviewScreen(src: 'https://form.jotform.com/203417502086146'),
+    comingSoon,
     comingSoon,
     comingSoon,
   ];
@@ -63,7 +62,7 @@ class _NavigationState extends State<NavigationScreen> {
 
   static Image _getIconImage(String name) {
     return Image.asset(
-      'images/$name.png',
+      'assets/images/$name.png',
       height: 32,
       width: 32,
     );
