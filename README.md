@@ -6,7 +6,7 @@ A flutter Gaming App UI example.
 
 ## Demo
 
-- Flutter web version: [https://flutter-gaming-app.netlify.app](https://flutter-gaming-app.netlify.app)
+- Flutter web version: [https://statickidz.github.io/flutter_gaming_app](https://statickidz.github.io/flutter_gaming_app)
 
 ## Getting Started
 
@@ -18,5 +18,5 @@ A few resources to get you started if this is your first Flutter project:
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
 For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
+[onli1 documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
