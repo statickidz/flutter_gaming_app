@@ -15,6 +15,8 @@ jobs:
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web --release
+      - run: |
+          sed -i "s%http://localhost:5000%https://statickidz.github.io/flutter_gaming_app%g" "build/web/index.html"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.1
