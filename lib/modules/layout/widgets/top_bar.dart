@@ -4,8 +4,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final double height;
 
   const TopBar({
-    Key key,
-    @required this.height,
+    Key? key,
+    required this.height,
   }) : super(key: key);
 
   @override
@@ -22,7 +22,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
             child: Chip(
                 label: Text(
                   '\$250',
-                  style: TextStyle(color: Theme.of(context).accentColor),
+                  style:
+                      TextStyle(color: Theme.of(context).colorScheme.secondary),
                 ),
                 backgroundColor: Color(0xFF242A4F)),
           ),

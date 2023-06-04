@@ -5,14 +5,16 @@ ThemeData appTheme() {
     // Define the default brightness and colors.
     brightness: Brightness.dark,
     primaryColor: Color(0xFF0C1020),
-    accentColor: Color(0xFF00F0FF),
-    backgroundColor: Color(0xFF0C1020),
+    hintColor: Color(0xFF00F0FF),
     scaffoldBackgroundColor: Color(0xFF0C1020),
 
     // Define navigation styles.
-    appBarTheme: AppBarTheme(elevation: 0),
+    appBarTheme: AppBarTheme(
+      elevation: 0,
+      backgroundColor: Color(0xFF0C1023),
+    ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: Color(0xFF0C1020),
+      backgroundColor: Color(0xFF0C1023),
       showSelectedLabels: false,
       showUnselectedLabels: false,
       elevation: 0,
@@ -24,9 +26,9 @@ ThemeData appTheme() {
     // Define the default TextTheme. Use this to specify the default
     // text styling for headlines, titles, bodies of text, and more.
     textTheme: TextTheme(
-      headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
-      headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
-      bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
+      displayLarge: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
+      titleLarge: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
+      bodyMedium: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
     ),
   );
 }

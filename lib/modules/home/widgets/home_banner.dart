@@ -7,10 +7,10 @@ class HomeBanner extends StatelessWidget {
   final double height;
 
   HomeBanner({
-    @required this.title,
-    @required this.subTitle,
-    @required this.price,
-    @required this.height,
+    required this.title,
+    required this.subTitle,
+    required this.price,
+    required this.height,
   });
 
   @override
@@ -56,12 +56,13 @@ class HomeBanner extends StatelessWidget {
                           label: Text(
                             price,
                             style: TextStyle(
-                              color: Theme.of(context).backgroundColor,
+                              color: Theme.of(context).colorScheme.background,
                               fontWeight: FontWeight.w400,
                               fontSize: 16,
                             ),
                           ),
-                          backgroundColor: Theme.of(context).accentColor),
+                          backgroundColor:
+                              Theme.of(context).colorScheme.secondary),
                     )
                   ],
                 )

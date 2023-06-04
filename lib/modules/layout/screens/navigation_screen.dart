@@ -4,7 +4,7 @@ import 'package:flutter_gaming_app/modules/home/screens/home_screen.dart';
 import 'package:flutter_gaming_app/modules/layout/widgets/top_bar.dart';
 
 class NavigationScreen extends StatefulWidget {
-  NavigationScreen({Key key}) : super(key: key);
+  NavigationScreen({Key? key}) : super(key: key);
 
   @override
   _NavigationState createState() => _NavigationState();

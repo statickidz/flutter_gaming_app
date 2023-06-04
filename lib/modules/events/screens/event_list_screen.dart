@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_gaming_app/modules/home/widgets/home_carousel.dart';
 import 'package:flutter_gaming_app/modules/layout/widgets/heading.dart';
 
@@ -98,24 +97,6 @@ class _EventListState extends State<EventListScreen> {
           )
         ],
       ),
-      /*children: [
-        
-        Expanded(
-          child: GridView.count(
-            padding: EdgeInsets.symmetric(horizontal: 5),
-            crossAxisCount: 2,
-            // Generate 100 widgets that display their index in the List.
-            children: List.generate(20, (index) {
-              return Container(
-                padding: EdgeInsets.only(left: 10, right: 10),
-                child: Image.asset(
-                  'assets/images/card1.png',
-                ),
-              );
-            }),
-          ),
-        )
-      ],*/
     );
   }
 }
